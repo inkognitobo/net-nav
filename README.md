@@ -1,5 +1,9 @@
 # NetNav
 
+<p align="center">
+🎬 A Chrome extension to navigate Netflix videos. 🎬
+</p>
+
 ## 💡 Features
 
 - Fine-grained navigation within the Netflix player.
