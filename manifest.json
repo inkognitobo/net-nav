@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "NetNav",
+  "version": "0.1.0",
+  "author": "inkognitobo",
+  "description": "Navigate Netflix videos.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://*.netflix.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://*.netflix.com/*"],
+      "resources": ["page_script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
